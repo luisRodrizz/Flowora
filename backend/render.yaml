@@ -1,0 +1,20 @@
+services:
+  # 🌸 Backend (Flask)
+  - type: web
+    name: flowora-backend
+    env: python
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app_auth.py"
+    plan: free
+    autoDeploy: true
+
+  # 💻 Frontend (React + Vite)
+  - type: static
+    name: flowora-frontend
+    rootDir: frontend
+    buildCommand: "npm install && npm run dev"
+    staticPublishPath: "dist"
+    envVars:
+      - key: VITE_API_URL
+        value: https://flowora-backend.onrender.com
