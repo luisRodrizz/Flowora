@@ -10,10 +10,10 @@ services:
     autoDeploy: true
 
   # 💻 Frontend (React + Vite)
-  - type: web
+  - type: static_site
     name: flowora-frontend
     rootDir: frontend
-    buildCommand: "npm install && npm run dev"
+    buildCommand: "npm install && npm run build"
     staticPublishPath: "dist"
     envVars:
       - key: VITE_API_URL
