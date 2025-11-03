@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: flowora-backend
-    env: python
-    rootDir: backend
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app_auth.py"
-    autoDeploy: true
-
