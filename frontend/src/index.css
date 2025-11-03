@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globales opcionales (puedes agregar los tuyos aquí) */
+body {
+  @apply bg-gray-900 text-white;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
