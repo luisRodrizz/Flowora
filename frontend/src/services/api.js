@@ -1,6 +1,6 @@
 import { getToken } from "./auth"; // 👈 importa la función que obtiene el token
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://flowora-backend.onrender.com";
 
 // 🔐 Función auxiliar: agrega el header Authorization automáticamente
 function authHeaders() {
